@@ -1,0 +1,24 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "description": "Esta es una prueba para el puesto de desarrollador frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielWilches/Tita_Media.git"
+  },
+  "author": "Daniel Prieto Wilches",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielWilches/Tita_Media/issues"
+  },
+  "homepage": "https://github.com/DanielWilches/Tita_Media#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0"
+  }
+}
