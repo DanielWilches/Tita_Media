@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sneak</title>
+</head>
+
+<body id="body">
+    <div class="page">
+        <header class=" header">
+            <div class="header--logo">
+                <div class="header--logo__img">
+                    <img src="./src/imgs/logo.png" alt="logo">
+                </div>
+                <h1>sneak</h1>
+                <h2>creative porfolio</h2>
+            </div>
+            <div class="header--nav">
+                <ul id="menuHeader"  class="header--nav-opciones">
+                    <li><a name="items" href="#main--portafolio" onclick="getImagnes('all',1)"  value="all"  >all</a> </li>
+                    <li><a name="items" href="#main--portafolio" onclick="getImagnes('branding',1)"  value="branding"  >branding</a> </li>
+                    <li><a name="items" href="#main--portafolio" onclick="getImagnes('web',1)"  value="web"  >web</a> </li>
+                    <li><a name="items" href="#main--portafolio" onclick="getImagnes('photograpy',1)"  value="photograpy"  >photograpy</a> </li>
+                    <li><a name="items" href="#main--portafolio" onclick="getImagnes('app',1)"  value="app"  >app</a></li>
+                    <li>
+                        <button onclick="inAnimateSearch()" class="header--btn__search">
+                            <img src="/src/icons/search-solid.svg" alt="search">
+                        </button>
+                        <button onclick="outAnimateSearch()" class="header--btn__cancel">
+                            <img src="/src/icons/times-solid.svg" alt="cancel">
+                        </button>
+                        <input  value  id="inputHeader" placeholder="Search" class="header--input_search" type="text" onkeypress="buscar(event)">
+
+                    </li>
+                </ul>
+                <button class="heade--humbuger__menu" onclick="menuMovil()" id='btnMenu' >
+                    <div name="barras"></div>
+                    <div name="barras"></div>
+                    <div name="barras"></div>
+                    <!-- <img src="./src/icons/bars-solid.svg" alt=""> -->
+                </button>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main--hero">
+                <h2>explore beyond horizon</h2>
+                <p>manga mundi referrentur quo, no rebum dignissim qui, per quodsi accusata id, agam labores.</p>
+                <a href="#main--portafolio"> view our work</a>
+            </section>
+
+            <section  id="main--portafolio"   class="main--portafolio">
+                <div class="main-layout">
+                    <div class="main-layout__items"><img src="./src/icons/th-large-solid.svg" alt=""></div>
+                    <div class="main-layout__items"><img src="./src/icons/grip-lines-solid.svg" alt=""></div>
+                </div>
+                <div class="main__navigation">
+                    <ul>
+                        <li  onclick="removeChilds()" ><a name="itemsMain"  onclick="getImagnes('all',1)"  value="all"  >all</a> </li>
+                        <li  onclick="removeChilds()" ><a name="itemsMain"  onclick="getImagnes('branding',1)"  value="branding"  >branding</a> </li>
+                        <li  onclick="removeChilds()" ><a name="itemsMain"  onclick="getImagnes('web',1)"   value="web"  >web</a> </li>
+                        <li  onclick="removeChilds()" ><a name="itemsMain"  onclick="getImagnes('photograpy',1)"  value="photograpy"  >photograpy</a> </li>
+                        <li  onclick="removeChilds()" ><a name="itemsMain"  onclick="getImagnes('app',1)"  value="app"  >app</a></li>
+                    </ul>
+                </div>
+                <div id="main--content"  class="main--content"></div>
+                <a onclick="moreImages()"  class="porfolio--btn__more">show me more</a>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer--info">2016 - <span>snake</span> all right reserved</p>
+            <ul class="footer--media">
+                <li class="footer--media__items"><a href="#"><img src="./src/icons/facebook-f-brands.svg" alt=""></a>
+                </li>
+                <li class="footer--media__items"><a href="#"><img src="./src/icons/twitter-brands.svg" alt=""></a></li>
+                <li class="footer--media__items"><a href="#"><img src="./src/icons/dribbble-brands.svg" alt=""></a></li>
+                <li class="footer--media__items"><a href="#"><img src="./src/icons/google-plus-g-brands.svg" alt=""></a>
+                </li>
+                <li class="footer--media__items"><a href="#"><img src="./src/icons/youtube-brands.svg" alt=""></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+<script  type="text/javascript" src="Conexion.js"></script>
+<script  type="text/javascript" src="index.js"></script>
+</html>

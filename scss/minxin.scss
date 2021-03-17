@@ -1,0 +1,43 @@
+@mixin selected {
+    background-color: $colorRosa;
+    color: white !important;
+}
+
+@mixin navegacion {
+    width: 100%;
+    height: 40px;
+    max-width: max-content;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 15px;
+
+    a {
+        text-decoration: none;
+        color: $colorGris;
+        width: 100%;
+        display: block;
+        font-weight: 600;
+        padding: 0 20px;
+        transition: all ease .3s;
+
+        &:active {
+            @include selected;
+        }
+    }
+}
+
+@mixin btna($color, $bgColor) {
+    width: 180px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    font-family: $FontQuestrial;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: $bgColor;
+    color: $color;
+    cursor: pointer;
+
+}
